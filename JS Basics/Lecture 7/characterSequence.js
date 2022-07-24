@@ -1,9 +1,9 @@
-function characterSequence(input) {
-    let string = input[0]
-    let stringLength = string.length
-    for (i = 0; i < stringLength; i += 1) {
-        console.log(string[i]);
+function symFlow(input) {
+    let word = input[0];
+
+    for (let i = 0; i < word.length; i += 1) {
+        console.log(word[i]);
     }
 }
 
-characterSequence(["softuni"])
+symFlow(["softuni"])

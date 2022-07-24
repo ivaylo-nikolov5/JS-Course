@@ -1,7 +1,7 @@
-function numbersToHundred() {
-    for (i = 1; i <= 100; i += 1) {
+function numbers1To100() {
+    for (let i = 1; i <= 100; i++) {
         console.log(i);
     }
 }
 
-numbersToHundred()
+numbers1To100()

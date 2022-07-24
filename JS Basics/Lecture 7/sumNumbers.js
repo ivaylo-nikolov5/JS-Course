@@ -1,22 +1,11 @@
-function numsDivisible9(input) {
-    let num1 = Number(input[0]);
-    let num2 = Number(input[1]);
-
+function sumOfNumbers(input) {
+    let numsAsString = input[0];
     let sum = 0;
 
-    for (i = num1; i <= num2; i += 1) {
-        if (i % 9 == 0) {
-            sum += i
-
-        }
+    for (i = 0; i < numsAsString.length; i++) {
+        sum += Number(numsAsString[i])
     }
-    console.log(`The sum: ${sum}`);
-
-    for (i = num1; i <= num2; i += 1) {
-        if (i % 9 == 0) {
-            console.log(i);
-        }
-    }
+    console.log(`The sum of the digits is:${sum}`);
 }
 
-numsDivisible9(["100", "200"])
+sumOfNumbers(["564891"])

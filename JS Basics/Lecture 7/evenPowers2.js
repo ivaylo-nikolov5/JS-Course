@@ -1,9 +1,9 @@
-function evenPowers2(input) {
-    let num = Number(input[0])
-    for (i = 0; i <= num; i += 2) {
-        let res = Math.pow(2, i)
-        console.log(res);
+function evenPowers(input) {
+    let n = Number(input[0])
+
+    for (let i = 0; i <= n; i += 2) {
+        console.log(Math.pow(2, i));
     }
 }
 
-evenPowers2(["7"])
+evenPowers(["4"])

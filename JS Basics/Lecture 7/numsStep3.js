@@ -1,8 +1,9 @@
-function numbersStep3(input) {
-    let num = Number(input[0])
-    for (i = 1; i <= num; i += 3) {
+function numsWithStep3(input) {
+    n = Number(input[0]);
+
+    for (let i = 1; i <= n; i += 3) {
         console.log(i);
     }
 }
 
-numbersStep3(["150"])
+numsWithStep3(["10"])
