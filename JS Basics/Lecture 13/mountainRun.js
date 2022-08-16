@@ -13,7 +13,7 @@ function mountainRun(input) {
     } else {
         console.log(`Yes! The new record is ${totalSeconds.toFixed(2)} seconds.`);
     };
-};
+}
 
 mountainRun(["5554.36",
     "1340",
