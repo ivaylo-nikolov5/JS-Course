@@ -4,18 +4,18 @@ function mountainRun(input) {
     let secondsPerMeter = Number(input[2]);
 
     let totalSeconds = distanceInMeters * secondsPerMeter;
-    let addedSeconds = (distanceInMeters / 50) * 30;
+    let addedSeconds = Math.trunc(distanceInMeters / 50) * 30;
     totalSeconds += addedSeconds;
 
     if (recordInSeconds <= totalSeconds) {
         let diff = Math.abs(recordInSeconds - totalSeconds);
         console.log(`No! He was ${diff.toFixed(2)} seconds slower.`);
     } else {
-        console.log(`Yes! The new record is ${totalSeconds} seconds.`);
+        console.log(`Yes! The new record is ${totalSeconds.toFixed(2)} seconds.`);
     };
 };
 
-mountainRun(["10164",
-    "1400",
-    "25"
+mountainRun(["5554.36",
+    "1340",
+    "3.23"
 ])
