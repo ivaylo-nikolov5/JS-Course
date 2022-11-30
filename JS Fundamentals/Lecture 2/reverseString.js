@@ -7,4 +7,10 @@ function reverseString(string) {
     console.log(reversedString);
 }
 
-reverseString("SoftUni");
+
+function reverseString2(string) {
+    let reversedString = string.split("").reverse().join("");
+    console.log(reversedString);
+}
+
+reverseString2("SoftUni");
