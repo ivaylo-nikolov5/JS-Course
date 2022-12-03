@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="32ba24b4-7c1c-4cae-bbde-cfa80a0a1480" name="Changes" comment="Added a solution for the Sum First and Last Array Elements problem">
-      <change afterPath="$PROJECT_DIR$/dayOfWeek.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reverseAnArrayOfNumbers.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,12 +46,16 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Node.js.reverseAnArrayOfNumbers.js">
+    <configuration name="reverseAnArrayOfNumbers.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/reverseAnArrayOfNumbers.js" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
     <configuration name="sumFirstAndLastArrayElements.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/sumFirstAndLastArrayElements.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Node.js.reverseAnArrayOfNumbers.js" />
         <item itemvalue="Node.js.sumFirstAndLastArrayElements.js" />
       </list>
     </recent_temporary>
@@ -69,6 +72,7 @@
       <workItem from="1670074869644" duration="220000" />
       <workItem from="1670075158457" duration="10000" />
       <workItem from="1670075237231" duration="28000" />
+      <workItem from="1670078014675" duration="746000" />
     </task>
     <task id="LOCAL-00001" summary="Added a solution for the Sum First and Last Array Elements problem">
       <created>1670074998986</created>
