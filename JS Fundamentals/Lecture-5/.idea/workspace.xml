@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="32ba24b4-7c1c-4cae-bbde-cfa80a0a1480" name="Changes" comment="Added a solution for the Sum Even Numbers problem">
-      <change afterPath="$PROJECT_DIR$/sumEvenNumbers.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/evenAndOddSubtraction.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reverseInPlace.js" beforeDir="false" afterPath="$PROJECT_DIR$/reverseInPlace.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,8 +47,11 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Node.js.sumEvenNumbers.js">
+  <component name="RunManager" selected="Node.js.evenAndOddSubtraction.js">
     <configuration name="demo.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/demo.js" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
+    <configuration name="evenAndOddSubtraction.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/evenAndOddSubtraction.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
     <configuration name="reverseAnArrayOfNumbers.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/reverseAnArrayOfNumbers.js" working-dir="$PROJECT_DIR$">
@@ -61,16 +63,13 @@
     <configuration name="sumEvenNumbers.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/sumEvenNumbers.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
-    <configuration name="sumFirstAndLastArrayElements.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/sumFirstAndLastArrayElements.js" working-dir="$PROJECT_DIR$">
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Node.js.evenAndOddSubtraction.js" />
         <item itemvalue="Node.js.sumEvenNumbers.js" />
         <item itemvalue="Node.js.reverseInPlace.js" />
         <item itemvalue="Node.js.demo.js" />
         <item itemvalue="Node.js.reverseAnArrayOfNumbers.js" />
-        <item itemvalue="Node.js.sumFirstAndLastArrayElements.js" />
       </list>
     </recent_temporary>
   </component>
@@ -86,7 +85,7 @@
       <workItem from="1670074869644" duration="220000" />
       <workItem from="1670075158457" duration="10000" />
       <workItem from="1670075237231" duration="28000" />
-      <workItem from="1670078014675" duration="3886000" />
+      <workItem from="1670078014675" duration="4945000" />
     </task>
     <task id="LOCAL-00001" summary="Added a solution for the Sum First and Last Array Elements problem">
       <created>1670074998986</created>
@@ -109,7 +108,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670080704784</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added a solution for the Sum Even Numbers problem">
+      <created>1670082513559</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1670082513559</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -128,6 +134,12 @@
           <url>file://$PROJECT_DIR$/sumFirstAndLastArrayElements.js</url>
           <line>1</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/evenAndOddSubtraction.js</url>
+          <line>4</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
