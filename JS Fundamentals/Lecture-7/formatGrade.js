@@ -1,4 +1,4 @@
-function format_grade(grade) {
+function formatGrade(grade) {
     let description = "";
 
     if (grade < 3) {
@@ -18,4 +18,4 @@ function format_grade(grade) {
     console.log(description);
 }
 
-format_grade(2.99)
+formatGrade(2.99)
