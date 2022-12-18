@@ -57,7 +57,7 @@ function movies(array) {
     while (movies.length > 0) {
         let movie = movies.shift();
 
-        if (movie.director !== undefined || movie.date !== undefined) {
+        if (movie.director !== undefined && movie.date !== undefined) {
             console.log(JSON.stringify(movie));
         }
     }
@@ -80,7 +80,6 @@ movies([
         'addMovie Fast and Furious',
         'addMovie Godfather',
         'Inception directedBy Christopher Nolan',
-        'Godfather directedBy Francis Ford Coppola',
         'Godfather onDate 29.07.2018',
         'Fast and Furious onDate 30.07.2018',
         'Batman onDate 01.08.2018',
