@@ -1,0 +1,58 @@
+body {
+    background-color: grey;
+}
+
+.circumferenceCalculator {
+    background-color: green;
+    margin: auto;
+    width: 35%;
+    border-radius: 20px;
+    padding: 10px;
+    border: 2px solid darkgoldenrod;
+}
+
+.calculatorHeader {
+    background-color: rgb(0, 147, 39);
+    text-align: center;
+    border-radius: 5pt;
+    margin-top: 20px;
+    padding: 3px;
+    margin-left: 5%;
+    margin-right: 5%;
+    border: solid 1pt;
+}
+
+.calculatorHeader #infoLabel {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: small;
+}
+
+.calculatorBody {
+    background-color: cadetblue;
+    padding: 5px;
+    border-radius: 5pt;
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    border: solid 1pt;
+}
+
+.result {
+    background-color: rgb(0, 147, 39);
+    padding: 15px;
+    border-radius: 5pt;
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    border: solid 1pt;
+}
+
+.result p {
+    font-size: small;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#radiusInput {
+    width: 70px;
+    margin-right: 20px;
+}
