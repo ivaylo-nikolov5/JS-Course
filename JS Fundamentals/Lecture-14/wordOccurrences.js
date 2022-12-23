@@ -1,28 +1,27 @@
 function wordOccurrences(array) {
-    let occurrences = {};
+    let occurrences = new Map();
 
-    for (let word of array) {
-        if (!occurrences.hasOwnProperty(word)) {
-            occurrences[word] = 1;
-            continue;
+    while (array.length > 0) {
+        let word = array.shift();
+
+        if (occurrences.has(word)) {
+            let currentWordOccurrences = occurrences.get(word);
+            occurrences.set(word, currentWordOccurrences + 1);
+        } else {
+            occurrences.set(word, 1);
         }
-
-        occurrences[word] += 1;
     }
 
-    let tuples = [];
-    for (let word in occurrences) tuples.push([word, occurrences[word]]);
-
-    tuples.sort((a, b) => {
-        a = a[1];
-        b = b[1];
-
-        return a > b ? -1: 0;
+    let sorted = Array.from(occurrences.entries());
+    sorted.sort(([keyA, valA], [keyB, valB]) => {
+        return valB - valA ;
     })
 
-    for (let pair of tuples) {
-        console.log(`${pair[0]} -> ${pair[1]} times`);
+
+    for (let [k, v] of sorted) {
+        console.log(k, "->", v, "times")
     }
+
 }
 
 wordOccurrences(["Here", "is", "the", "first", "sentence", "Here", "is", "another", "sentence", "And", "finally", "the", "third", "sentence"])
