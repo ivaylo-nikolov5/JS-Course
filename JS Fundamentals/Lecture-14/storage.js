@@ -1,18 +1,18 @@
 function storage(array) {
-    let products = {};
+    let products = new Map();
 
     while (array.length > 0) {
         let [product, quantity] = array.shift().split(" ");
-
-        if (products[product] !== undefined) {
-            products[product] += Number(quantity);
-            continue;
+        quantity = Number(quantity);
+        if (products.has(product)) {
+            products.set(product, products.get(product) + quantity);
+        } else {
+            products.set(product, quantity);
         }
 
-        products[product] = Number(quantity);
     }
 
-    for (let [product, quantity] of Object.entries(products)) {
+    for (let [product, quantity] of products.entries()) {
         console.log(`${product} -> ${quantity}`);
     }
 }
