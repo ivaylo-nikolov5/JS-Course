@@ -1,30 +1,44 @@
 function schoolGrades(array) {
-    let students = {};
+    let result = new Map();
 
-    while (array.length > 0) {
-        let student = array.shift().split(" ");
-        let name = student[0];
-        let averageGrade = 0;
+    for (let info of array) {
+        info = info.split(" ");
+        let name = info[0];
+        let grades = [];
 
-        for (let grade of student.slice(1)) {
-            averageGrade += Number(grade);
+        for (let i of info.slice([1])) {
+            grades.push(Number(i));
         }
 
-        averageGrade /= student.slice(1).length;
-
-        if (students[name] === undefined) {
-            students[name] = averageGrade;
+        if (result.has(name)) {
+            result.set(name, result.get(name).concat(grades));
             continue;
         }
 
-        students[name] = (students[name] + averageGrade) / 2;
+        result.set(name, grades);
     }
 
-    let sortedKeys = Object.keys(students);
-    sortedKeys = sortedKeys.sort();
 
-    for (let name of sortedKeys) {
-        console.log(`${name}: ${students[name].toFixed(2)}`);
+    let sortedNames = Array.from(result.entries());
+    sortedNames.sort(([keyA, valA], [keyB, valB]) => {
+        return keyA.localeCompare(keyB);
+    })
+
+    for (let [k, v] of sortedNames) {
+        v = calcAverage(v);
+        console.log(`${k}: ${v.toFixed(2)}`);
+    }
+
+    function calcAverage(grades) {
+        let average = 0;
+
+        for (let grade of grades) {
+            average += Number(grade);
+        }
+
+        average /= grades.length;
+
+        return average;
     }
 }
 
