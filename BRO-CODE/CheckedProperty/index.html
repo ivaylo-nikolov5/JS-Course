@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Checked Property</title>
+</head>
+
+<body>
+
+    <div class="paymentDiv">
+        <h1>Select a payment method!</h1>
+
+        <div class="paymentMethods">
+            <input type="radio" name="payments" id="card" class="option">
+            <img src="images/cards.jpeg" alt="card" class="paymentImages" id="bankCard">
+
+            <input type="radio" name="payments" id="paypal" class="option">
+            <img src="images/paypal.jpeg" alt="paypal" class="paymentImages">
+
+            <input type="radio" name="payments" id="crypto" class="option">
+            <img src="images/cryptos.jpeg" alt="crypto" class="paymentImages">
+        </div>
+
+
+        <div class="subscribe">
+            <label id="subscribeLabel">Subscribe for news and updates?</label>
+            <input type="checkbox" id="subscribeCheckbox">
+
+        </div>
+
+        <div class="submitSection">
+            <button type="button" id="submitBtn"><b>SUBMIT</b></button>
+        </div>
+
+    </div>
+    <br>
+    <div class="result">
+        <label id="resultLabel"></label>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>

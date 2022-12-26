@@ -1,0 +1,100 @@
+body {
+    background-color: blueviolet;
+}
+
+.paymentDiv {
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2);
+    background-color: white;
+    width: 60%;
+    margin: 0 auto;
+    justify-content: center;
+    border-radius: 20px;
+    padding-bottom: 20px;
+}
+
+.paymentDiv .paymentMethods {
+    padding-top: 5%;
+    text-align: center;
+    padding-bottom: 10%;
+    padding-left: 30px;
+}
+
+.paymentDiv .paymentMethods .option {
+    display: flex;
+    justify-content: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+}
+
+.paymentDiv .paymentMethods .paymentImages {
+    width: 170px;
+    margin-top: -55px;
+    border: 1px solid grey;
+    border-radius: 15px;
+}
+
+.paymentDiv .paymentMethods #bankCard {
+    width: 170px;
+    height: 100px;
+}
+
+h1 {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: -10px;
+}
+
+.subscribe {
+    background-color: rgb(57, 57, 57);
+    color: white;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+    font-size: 23px;
+    border-radius: 9px;
+}
+
+.subscribe #subscribeCheckbox {
+    position: relative;
+    padding-top: 50px;
+    width: 25px;
+    height: 25px;
+}
+
+.submitSection {
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 40px;
+}
+
+.submitSection #submitBtn {
+    width: 150px;
+    height: 60px;
+    font-size: x-large;
+    background-color: blueviolet;
+    border-radius: 30px;
+    font-family: sans-serif;
+    border: 2px solid black;
+    transition: all ease-in-out 0.3s;
+    cursor: pointer;
+    box-shadow: 0 10px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.submitSection #submitBtn:hover {
+    background-color: white;
+    border-color: blueviolet;
+    color: blueviolet;
+}
+
+.result {
+    text-align: center;
+}
+
+#resultLabel {
+    padding-top: 20px;
+    color: white;
+    font-size: x-large;
+}
