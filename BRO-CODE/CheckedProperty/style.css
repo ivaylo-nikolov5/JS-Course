@@ -3,9 +3,10 @@ body {
 }
 
 .paymentDiv {
+    resize: both;
     box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2);
     background-color: white;
-    width: 60%;
+    width: 700px;
     margin: 0 auto;
     justify-content: center;
     border-radius: 20px;

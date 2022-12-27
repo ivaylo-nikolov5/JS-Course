@@ -1,17 +1,19 @@
 let paymentOption;
 
 document.getElementById("submitBtn").onclick = function() {
-    let subscribed = document.getElementById("subscribeCheckbox").checked;
+    let subscribed = document.getElementById("subscribeCheckbox");
+    let cardBtn = document.getElementById("card");
+    let paypalBtn = document.getElementById("paypal")
 
-    if (document.getElementById("card").checked) {
+    if (cardBtn.checked) {
         paymentOption = "a card";
-    } else if (document.getElementById("paypal").checked) {
+    } else if (paypalBtn.checked) {
         paymentOption = "PayPal";
     } else {
         paymentOption = "crypto";
     }
 
-    if (subscribed) {
+    if (subscribed.checked) {
         subscribed = "Subscribed";
     } else {
         subscribed = "not Subscribed";
