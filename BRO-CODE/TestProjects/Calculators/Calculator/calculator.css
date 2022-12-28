@@ -1,0 +1,395 @@
+body {
+    margin-top: 0px;
+    background-color: grey;
+    text-align: center;
+}
+
+.header {
+    margin: -10px;
+    top: -20px;
+    padding-top: 20px;
+    margin-top: 0px;
+    text-align: center;
+    background-color: darkcyan;
+    padding-bottom: 20px;
+    border-bottom: 4px solid black;
+}
+
+.header #titleLabel {
+    font-size: 40px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.calculatorBody {
+    border: 5px solid orange;
+    margin: 0 auto;
+    width: 330px;
+    height: 450px;
+    margin-top: 100px;
+    text-align: center;
+    background-color: black;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 20px;
+}
+
+.calculatorBody #display {
+    position: static;
+    background-color: white;
+    margin-left: 30px;
+    margin-right: 30px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    border-radius: 20px;
+}
+
+.calculatorBody #display {
+    text-align: left;
+    padding-left: 20px;
+}
+
+.calculatorBody #numbersLabel {
+    font-size: xx-large;
+}
+
+.buttons {
+    padding-top: 60px;
+}
+
+.button {
+    margin-left: 7px;
+    margin-right: 7px;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    font-size: 20px;
+    margin-bottom: 14px;
+}
+
+#clearBtn {
+    background-color: rgb(169, 167, 167);
+    border: 0;
+    transition: all ease-in-out 0.3s;
+}
+
+#clearBtn:hover {
+    background-color: white;
+    border: 0;
+    cursor: pointer;
+}
+
+#clearBtn:active {
+    transition: ease-in-out 0.1s;
+    background-color: greenyellow;
+}
+
+#plusMinusBtn {
+    background-color: rgb(169, 167, 167);
+    border: 0;
+    transition: all ease-in-out 0.3s;
+}
+
+#plusMinusBtn:hover {
+    background-color: white;
+    border: 0;
+    cursor: pointer;
+}
+
+#plusMinusBtn:active {
+    transition: ease-in-out 0.1s;
+    background-color: greenyellow;
+}
+
+#percentBtn {
+    background-color: rgb(169, 167, 167);
+    border: 0;
+    transition: all ease-in-out 0.3s;
+}
+
+#percentBtn:hover {
+    background-color: white;
+    border: 0;
+    cursor: pointer;
+}
+
+#percentBtn:active {
+    transition: all ease-in-out 0.1s;
+    background-color: greenyellow;
+}
+
+#divisionBtn {
+    background-color: rgb(255, 136, 0);
+    border: 0;
+    color: white;
+    transition: all ease-in-out 0.3s;
+}
+
+#divisionBtn:hover {
+    background-color: white;
+    border: 0;
+    cursor: pointer;
+}
+
+#divisionBtn:active {
+    transition: ease-in-out 0.1s;
+    background-color: greenyellow;
+}
+
+#sevenBtn {
+    background-color: rgb(78, 78, 78);
+    border: 0;
+    color: white;
+    transition: all ease-in-out 0.3s;
+}
+
+#sevenBtn:hover {
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+#sevenBtn:active {
+    transition: ease-in-out 0.1s;
+    background-color: greenyellow;
+}
+
+#eightBtn {
+    background-color: rgb(78, 78, 78);
+    border: 0;
+    color: white;
+    transition: all ease-in-out 0.3s;
+}
+
+#eightBtn:hover {
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+#eightBtn:active {
+    transition: ease-in-out 0.1s;
+    background-color: greenyellow;
+}
+
+#nineBtn {
+    background-color: rgb(78, 78, 78);
+    border: 0;
+    color: white;
+    transition: all ease-in-out 0.3s;
+}
+
+#nineBtn:hover {
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+#nineBtn:active {
+    transition: ease-in-out 0.1s;
+    background-color: greenyellow;
+}
+
+#multiplyBtn {
+    background-color: rgb(255, 136, 0);
+    border: 0;
+    color: white;
+    transition: all ease-in-out 0.3s;
+}
+
+#multiplyBtn:hover {
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+#multiplyBtn:active {
+    transition: ease-in-out 0.1s;
+    background-color: greenyellow;
+}
+
+#fourBtn {
+    background-color: rgb(78, 78, 78);
+    border: 0;
+    color: white;
+    transition: all ease-in-out 0.3s;
+}
+
+#fourBtn:hover {
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+#fourBtn:active {
+    transition: ease-in-out 0.1s;
+    background-color: greenyellow;
+}
+
+#fiveBtn {
+    background-color: rgb(78, 78, 78);
+    border: 0;
+    color: white;
+    transition: all ease-in-out 0.3s;
+}
+
+#fiveBtn:hover {
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+#fiveBtn:active {
+    transition: ease-in-out 0.1s;
+    background-color: greenyellow;
+}
+
+#sixBtn {
+    background-color: rgb(78, 78, 78);
+    border: 0;
+    color: white;
+    transition: all ease-in-out 0.3s;
+}
+
+#sixBtn:hover {
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+#sixBtn:active {
+    transition: ease-in-out 0.1s;
+    background-color: greenyellow;
+}
+
+#subtractBtn {
+    background-color: rgb(255, 136, 0);
+    border: 0;
+    color: white;
+    transition: all ease-in-out 0.3s;
+}
+
+#subtractBtn:hover {
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+#subtractBtn:active {
+    transition: ease-in-out 0.1s;
+    background-color: greenyellow;
+}
+
+#oneBtn {
+    background-color: rgb(78, 78, 78);
+    border: 0;
+    color: white;
+    transition: all ease-in-out 0.3s;
+}
+
+#oneBtn:hover {
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+#oneBtn:active {
+    transition: ease-in-out 0.1s;
+    background-color: greenyellow;
+}
+
+#twoBtn {
+    background-color: rgb(78, 78, 78);
+    border: 0;
+    color: white;
+    transition: all ease-in-out 0.3s;
+}
+
+#twoBtn:hover {
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+#twoBtn:active {
+    transition: ease-in-out 0.1s;
+    background-color: greenyellow;
+}
+
+#threeBtn {
+    background-color: rgb(78, 78, 78);
+    border: 0;
+    color: white;
+    transition: all ease-in-out 0.3s;
+}
+
+#threeBtn:hover {
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+#threeBtn:active {
+    transition: ease-in-out 0.1s;
+    background-color: greenyellow;
+}
+
+#addBtn {
+    background-color: rgb(255, 136, 0);
+    border: 0;
+    color: white;
+    transition: all ease-in-out 0.3s;
+}
+
+#addBtn:hover {
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+#addBtn:active {
+    transition: ease-in-out 0.1s;
+    background-color: greenyellow;
+}
+
+#zeroBtn {
+    background-color: rgb(78, 78, 78);
+    color: white;
+    border: 0;
+    width: 118px;
+    text-align: left;
+    padding-left: 15px;
+    font-size: x-large;
+    transition: ease-in-out 0.3s;
+}
+
+#zeroBtn:hover {
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+#zeroBtn:active {
+    transition: ease-in-out 0.1s;
+    background-color: greenyellow;
+}
+
+#pointBtn {
+    background-color: rgb(78, 78, 78);
+    border: 0;
+    color: white;
+    transition: all ease-in-out 0.3s;
+}
+
+#pointBtn:hover {
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+#pointBtn:active {
+    transition: ease-in-out 0.1s;
+    background-color: greenyellow;
+}
+
+#equalsBtn {
+    background-color: rgb(255, 136, 0);
+    border: 0;
+    color: white;
+    transition: all ease-in-out 0.3s;
+}
+
+#equalsBtn:hover {
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+#equalsBtn:active {
+    transition: ease-in-out 0.1s;
+    background-color: greenyellow;
+}
