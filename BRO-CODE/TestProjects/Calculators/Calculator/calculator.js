@@ -207,6 +207,24 @@ document.getElementById("divisionBtn").onclick = function() {
     }
 }
 
+document.getElementById("percentBtn").onclick = function() {
+    let num = Number(currentNumber.join(""));
+    currentNumber = [];
+    label.innerHTML = 0;
+    res = num;
+
+    document.getElementById("equalsBtn").onclick = function() {
+        if (currentNumber[currentNumber.length - 1] === ".") {
+            return;
+        }
+
+        res %= num = Number(currentNumber.join(""));
+        label.innerHTML = res;
+        currentNumber = [];
+        res = 0;
+    }
+}
+
 
 function appendNumber(number, currentNumber) {
     if (currentNumber.length === 14) {
