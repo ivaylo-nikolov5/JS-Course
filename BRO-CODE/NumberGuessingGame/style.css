@@ -1,0 +1,31 @@
+body {
+    margin-top: -22px;
+    text-align: center;
+    margin-left: -10px;
+    margin-right: -10px;
+    background-color: white;
+}
+
+#header {
+    background-color: darkorange;
+}
+
+h1 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+p {
+    font-size: x-large;
+}
+
+label {
+    font-size: large;
+}
+
+#submitBtn {
+    margin-top: 1cm;
+    width: 90px;
+    height: 30px;
+    cursor: pointer;
+}
