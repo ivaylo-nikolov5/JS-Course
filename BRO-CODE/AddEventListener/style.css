@@ -1,0 +1,12 @@
+#innerDiv {
+    background-color: greenyellow;
+    width: 100px;
+    height: 100px;
+    border: 1px solid;
+}
+
+#outerDiv {
+    background-color: greenyellow;
+    width: 200px;
+    height: 200px;
+}
