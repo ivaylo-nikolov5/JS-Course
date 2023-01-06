@@ -1,0 +1,39 @@
+body {
+    background-color: black;
+}
+
+.mainContainer {
+    margin: auto;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    border-radius: 20px;
+    text-align: center;
+    background-color: rgb(31, 30, 30);
+    width: 300px;
+    border: 3px solid rgb(12, 243, 104);
+
+}
+
+.mainContainer .display {
+    font-family: 'Brush Script MT', cursive;
+    font-size: 55px;
+    color: rgb(12, 243, 104);
+    padding-bottom: 4px;
+    margin-bottom: -20px;
+}
+
+.controlButton {
+    color: white;
+    border: 2px solid white;
+    background-color: rgb(73, 73, 73);
+    font-family: 'Brush Script MT', cursive;
+    font-size: large;
+    border-radius: 10px;
+    transition: ease-in-out 0.2s;
+}
+
+.controlButton:hover {
+    border: 2px solid rgb(12, 243, 104);
+    color: rgb(12, 243, 104);
+    cursor: pointer;
+}
