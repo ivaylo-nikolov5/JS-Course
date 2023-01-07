@@ -1,0 +1,47 @@
+.mainContainer {
+    position: relative;
+    margin: auto;
+    background-color: #222222;
+    text-align: center;
+    width: 300px;
+    height: 120px;
+    border-radius: 20px;
+    border: 3px solid rgb(0, 247, 132);
+
+}
+
+.mainContainer .innerContainer {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translateY(-50%);  
+    margin: auto;    
+    padding-top: 10px;
+    border: 3px solid rgb(0, 247, 132);
+    width: 260px;
+    height: 85px;
+    border-radius: 20px;
+
+
+}
+
+.mainContainer .innerContainer .display #displayLabel {
+    color: rgb(0, 247, 132);
+    font-size: 50px;
+}
+
+.controlBtn {
+    background-color: rgb(68, 68, 68);
+    border: 2px solid rgb(0, 247, 132);
+    border-radius: 8px;
+    width: 60px;
+    height: 25px;
+    color: white;
+    transition: ease-in-out 0.4s;
+
+}
+
+.controlBtn:hover {
+    color: black;
+    background-color: white;
+}
