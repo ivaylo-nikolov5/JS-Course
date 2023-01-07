@@ -1,0 +1,29 @@
+.mainContainer {
+    margin: auto;
+    border: 4px solid;
+    border-radius: 10px;
+    background-color: rgb(172, 172, 172);
+    width: 600px;
+    height: 300px;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.labels {
+    font-size: 35px;
+    font-family: "Consolas", "monaco", monospace;
+}
+
+#yMove {
+    color: blue;
+}
+
+#cMove {
+    color: red;
+}
+
+.option {
+    font-size: 30px;
+    margin-right: 5px;
+    width: 180px;
+}
