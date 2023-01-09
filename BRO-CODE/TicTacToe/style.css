@@ -1,0 +1,23 @@
+body {
+    text-align: center;
+}
+
+.cell {
+    width: 75px;
+    height: 75px;
+    border: 3px solid;
+    box-shadow: 0 0 0 2px;
+    line-height: 75px;
+    cursor: pointer;
+    font-size: 60px;
+    font-family: "Permanent Marker", cursive;
+
+}
+
+#cellContainer {
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    font-family: "Permanent Marker";
+    width: 225px;
+}
