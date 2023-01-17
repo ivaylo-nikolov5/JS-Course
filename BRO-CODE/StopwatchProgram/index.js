@@ -48,7 +48,6 @@ function updateTime() {
     secs = formatTime(secs);
     mins = formatTime(mins);
     hrs = formatTime(hrs);
-    mins
     display.textContent = `${hrs}:${mins}:${secs}`;
 
     function formatTime(time) {
