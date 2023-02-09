@@ -1,4 +1,5 @@
 import React from "react";
+import staticReactLogo from "../images/react.png";
 import "../main-section.css";
 
 function Main() {
@@ -6,6 +7,10 @@ function Main() {
     <div>
         <div className="title-section">
             <h1 className="title">Fun facts about React</h1>
+        </div>
+        
+        <div>
+            <img className="static-react-logo" src={staticReactLogo}/>
         </div>
 
         <div className="list-section">
