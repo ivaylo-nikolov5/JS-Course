@@ -1,0 +1,33 @@
+.navBar {
+    display: flex;
+    background-color: rgb(28, 28, 28);
+    padding-bottom: 20px;
+}
+
+.logo {
+    width: 40px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.navBar h3 {
+    display: flex;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-bottom: 0;
+    color: rgb(39, 229, 243);
+    height: 20px;
+    margin-top: 27px;
+    font-size: 22px;
+}
+
+.right-side {
+    margin-left: auto;
+    margin-right: 20px;
+}
+
+.navBar h4 {
+    margin-top: 30px;
+    color: white;
+    font-weight: 600;
+}
