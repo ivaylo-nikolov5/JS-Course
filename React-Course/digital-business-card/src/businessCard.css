@@ -1,0 +1,45 @@
+.main-container {
+
+}
+
+.info {
+    background-color: #21222A;
+    width: 50%;
+    margin: auto;
+}
+
+.profile-picture {
+    width: 50%;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    clip-path: inset(0 0 40px 0);
+    margin-bottom: -45px;
+}
+
+.name {
+    margin-top: 0;
+    padding-top: 19px;
+    color: white;
+    font-size: 19px;
+    margin-bottom: 3px;
+}
+
+.position {
+    font-size: 13px;
+    margin-top: 0px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.website {
+    color: white;
+    text-decoration: none;
+    transition: all ease-in-out 0.3s;
+}
+
+.website:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    color: rgb(218, 218, 218);
+}
+

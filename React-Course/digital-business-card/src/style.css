@@ -1,0 +1,20 @@
+body {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    background-color: black;
+}
+
+.business-card-container {
+    display: flexbox;
+    text-align: center;
+    background-color: #43454c;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-top: 50px;
+    margin-left: 25%;
+    margin-right: 25%;
+    border-radius: 5px;
+}
