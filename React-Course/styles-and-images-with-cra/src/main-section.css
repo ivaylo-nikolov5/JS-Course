@@ -1,0 +1,30 @@
+.title-section {
+    margin-top: 60px;
+    margin-left: 30px;
+}
+
+.title {
+    color: white;
+    font-size: 39px;
+    font-weight: bold;
+    letter-spacing: -0.05em;
+}
+
+.list-section {
+    margin-top: 40px;
+    margin-left: 45px;
+    max-width: 450px;
+}
+
+
+.list-section li {
+    color: white;
+    font-size: 18px;
+    margin-top: 15px;
+    
+}
+
+.list-section li::marker {
+    font-size: 1.4rem;
+    color: rgb(39, 229, 243);
+}
