@@ -3,7 +3,7 @@ import "../card.css"
 import katieZaferes from "../images/katie-zaferes.png";
 import star from "../images/star.png";
  
-function Card() {
+function Card(props) {
     return (
         <div className="card-container">
             <div className="card-condition">
