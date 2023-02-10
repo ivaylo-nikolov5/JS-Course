@@ -1,0 +1,11 @@
+.navbar {
+    margin: auto;
+    box-shadow: 0 7px 7px -7px rgb(172, 172, 172);
+}
+
+.logo {
+    width: 100px;
+    margin-left: 30px;
+    padding-top: 17px;
+    padding-bottom: 17px;
+}
