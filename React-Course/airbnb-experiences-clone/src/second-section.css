@@ -1,0 +1,37 @@
+.second-section {
+    margin-top: 0;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.image-section {
+    display: flex;
+    justify-content: center;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.photo-grid {
+    margin-top: 30px;
+    width: 100%;
+    max-width: 650px;
+}
+
+.second-section-info {
+    margin: 0;
+}
+
+.second-section-title {
+    margin-top: 35px;
+    margin-bottom: 0;
+    letter-spacing: -1px;
+    font-size: 39px;
+}
+
+.second-section-text {
+    font-size: 18px;
+    width: 330px;
+}
+
+
+
