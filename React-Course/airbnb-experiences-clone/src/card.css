@@ -1,0 +1,72 @@
+.card-container {
+    position: relative;
+    margin-top: 50px;
+    margin-left: 90px;
+    display: flex;
+    flex-direction: column;
+    max-width: 170px;
+}
+
+.card-photo {
+    margin: 0;
+}
+
+.card-reviews {
+    width: fit-content;
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+
+.orange-star {
+    margin-right: 3px;
+    vertical-align:middle;
+    width: 18px;
+}
+
+.reviews-text {
+    font-size: 15px;
+    vertical-align: -2px;
+}
+
+.grayed-text {
+    color: gray;
+    font-size: 14px;
+}
+
+.card-description {
+    font-size: 12.535px;
+    color: rgb(57, 57, 57);
+    font-weight: 500;
+    margin-top: 8px;
+    margin-bottom: 0;
+}
+
+.card-price {
+    margin-top: 10px;
+    font-size: 13.5px;
+    font-weight: bold;
+}
+
+.price-per-person {
+    font-weight: 400;
+    color: rgb(57, 57, 57);
+    font-weight: 500;
+}
+
+.slash {
+    font-size: 18px;
+    vertical-align: middle;
+}
+
+.card-condition {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    background-color: #ffffff;
+    color: #000000;
+    text-align: center;
+    font-size: 10px;
+    border-radius: 3px;
+    font-weight: 600;
+    padding: 4px 6px;
+}
