@@ -14,6 +14,9 @@
 
 .contact-image {
     max-width: 250px;
+    min-width: 250px;
+    min-height: 250px;
+    max-height: 250px;
     border-radius: 7px;
 }
 
