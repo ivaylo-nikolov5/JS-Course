@@ -3,18 +3,29 @@ import "../card.css"
 import star from "../images/star.png";
  
 function Card(props) {
+    let condition;
+
+    if (props.openSpots === 0) {
+        condition = "SOLD OUT";
+    } else if (props.location === "Online") {
+        condition = "ONLINE";
+    }
+
+    let validConditions = ["ONLINE", "SOLD OUT"]
     return (
         <div className="card-container">
-            {/* <div className="card-condition">
-                SOLD OUT
-            </div> */}
+            {validConditions.includes(condition) &&
+                <div className="card-condition">
+                    {condition}
+                </div>
+            }
 
-            <img src={props.img} className="card-photo"/>
+            <img src={`images/${props.coverImg}`} className="card-photo"/>
 
             <p className="card-reviews">
                 <img src={star} className="orange-star"/>
                 <span className="reviews-text">
-                    {props.rating} <span className="grayed-text">({props.reviewCount})&#183;{props.country}</span>
+                    {props.rating} <span className="grayed-text">({props.stats.reviewCount})&#183;{props.location}</span>
                 </span>
             </p>
 
