@@ -1,4 +1,6 @@
-import React from "react";
-import ReactDOM from "react-dom";
+let pokemons = ["Bulbasaur", "Charmander", "Squirtel"];
+pokemons = pokemons.map((pokemon) => {
+    return `<p>${pokemon}</p>`;
+})
 
-ReactDOM.render(<h1>Hello world!</h1>)
+console.log(pokemons);

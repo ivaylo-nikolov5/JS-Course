@@ -16,6 +16,7 @@ function App() {
                 reviewCount={6}
                 title="Life Lessons with Katie Zaferes"
                 price={136}
+                country="USA"
             />
         </div>
     )
