@@ -11,7 +11,7 @@ function App() {
         return (
             <Card
                 key={item.key}
-                {...item}
+                item={item}
             />
         )
     })

@@ -6,7 +6,10 @@ import data from "./data.js"
 
 function App() {
     const destinations = data.map(element => {
-        
+        <Separate 
+            id={element.id}
+            element={element}
+        />
     })
 
 
