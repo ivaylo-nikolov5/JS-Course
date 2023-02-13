@@ -1,0 +1,17 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(242, 72, 72);
+    padding: 10px;
+    margin-bottom: 0;
+}
+
+.header-logo {
+    width: 25px;
+    margin-right: 8px;
+}
+
+.header-title {
+    color: white;
+}
