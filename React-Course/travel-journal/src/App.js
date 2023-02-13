@@ -1,11 +1,22 @@
 import React from "react";
 import Header from "./components/header.js";
+import Separate from "./components/Separate.js"
 import "./style.css"
+import data from "./data.js"
 
 function App() {
+    const destinations = data.map(element => {
+        
+    })
+
+
+
     return (
         <div>
-          <Header />
+            <Header />
+            <div>
+                {destinations}
+            </div>
       </div>
   )
 }
