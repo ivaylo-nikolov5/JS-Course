@@ -6,7 +6,7 @@ import data from "./data.js"
 
 function App() {
     const destinations = data.map(element => {
-        <Separate 
+       return <Separate 
             id={element.id}
             element={element}
         />
@@ -17,7 +17,7 @@ function App() {
     return (
         <div>
             <Header />
-            <div>
+            <div className="destinations-container">
                 {destinations}
             </div>
       </div>
