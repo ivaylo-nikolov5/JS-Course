@@ -1,0 +1,51 @@
+.meme-body {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    max-width: fit-content;
+    margin-top: 40px;
+}
+
+
+.meme-input-box {
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 270px;
+    min-height: 35px;
+    border-radius: 7px;
+    border: 1.4px solid rgb(157, 157, 157);
+    font-size: 17px;
+    padding-left: 14px;
+    transition: all ease-in-out 0.5s;
+}
+
+.meme-input-box:hover {
+    border: 1.4px solid rgb(4, 4, 4);
+}
+
+.meme-generate {
+    margin: auto;
+}
+
+.generateBtn {
+    margin: 0;
+    margin-top: 15px;
+    padding: 1px 0;
+    width: 594px;
+    background-color: #520563;
+    color: white;
+    height: 44px;
+    font-size: 17px;
+    border-radius: 7px;
+    border: 0;
+    transition: all ease-in-out 0.4s;
+}
+
+.generateBtn:hover {
+    cursor: pointer;
+    background-color: #891fa1;
+}
+
+.generateBtn:hover:active {
+    cursor: grabbing;
+}
