@@ -3,30 +3,10 @@ body {
     margin: 0;
 }
 
-.destinations-container {
-    
-}
-
 .destinations {
     display: flex;
     flex-direction: column;
-    
 }
 
-.separate-priview-info {
-    margin-top: 30px;
-    margin-left: 20px;
-    display: flex;
-    flex-direction: column;
-}
 
-.location {
-    display: flex;
-    align-items: center;
-}
-
-.locationIcon {
-    width: 15px;
-    margin-right: 8px;
-}
 

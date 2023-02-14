@@ -13,8 +13,18 @@ function Separate(props) {
             <div className="separate-priview-info">
                 <div className="location">
                     <img src={locationIcon} className="locationIcon"/>
-                    {props.element.location}
+                    <span className="separate-location">{props.element.location}</span>
+                    <a 
+                    href={props.element.googleMapsLink} 
+                    target="_blank"
+                    className="googleMapsLink">
+                        View on Google Maps
+                    </a>
                 </div>
+
+                <h1 className="separate-title">{props.element.title}</h1>
+                <p className="separate-dates">{props.element.startDate} - {props.element.endDate}</p>
+                <p className="separate-description">{props.element.description}</p>
             </div>
         </div>
     )
