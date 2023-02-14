@@ -1,0 +1,42 @@
+.header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    background-color: #520563;
+    padding: 20px;
+}
+
+.header-left-part {
+    display: flex;
+    align-items: center;
+}
+
+.logo-image {
+    width: 45px;
+    margin-right: 10px;
+}
+
+.header-title {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+    color: white;
+    margin: 0;
+    letter-spacing: -1.4px;
+    min-width: 195px;
+}
+
+.header-right-part {
+    display: flex;
+    justify-content: end;
+    padding-right: 20px;
+}
+
+.header-subtitle {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 100;
+    font-size: 15px;
+    color: white;
+    min-width: 185px;
+
+}
