@@ -54,3 +54,16 @@ body {
     right: -20px;
 }
 
+.counter--minus:hover,
+.counter--plus:hover {
+    background-color: gray;
+}
+
+.counter--minus:active,
+.counter--plus:active {
+    width: 49px;
+    height: 49px;
+}
+
+
+
