@@ -49,3 +49,13 @@
 .generateBtn:hover:active {
     cursor: grabbing;
 }
+
+.memeImage {
+    margin: auto;
+    margin-top: 40px;
+    max-width:620px;
+}
+
+.memeImageContainer {
+    display: flex;
+}
