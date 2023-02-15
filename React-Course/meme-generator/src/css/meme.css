@@ -53,9 +53,11 @@
 .memeImage {
     margin: auto;
     margin-top: 40px;
-    max-width:620px;
+    max-height:600px;
+    max-width: 600px;
 }
 
 .memeImageContainer {
     display: flex;
+    margin-bottom: 20px;
 }

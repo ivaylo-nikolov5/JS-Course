@@ -3,9 +3,13 @@ import "../css/meme.css"
 import memesData from "../memesData";
 
 function Meme() {
+    const memes = memesData.data.memes;
+    const [image, setImage] = React.useState("")
+
+
     function handleClick() {
         let randomMeme = Math.trunc(Math.random() * 100 + 1);
-        document.querySelector(".memeImage").src = memesData.data.memes[randomMeme].url;
+        setImage(memes[randomMeme].url)
     }
 
 
@@ -30,7 +34,7 @@ function Meme() {
             </div>
 
             <div className="memeImageContainer">
-                <img className="memeImage" src=""/>
+                <img className="memeImage" src={image}/>
             </div>
         </div>
     )
