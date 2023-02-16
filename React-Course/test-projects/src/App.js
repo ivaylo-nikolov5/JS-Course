@@ -1,32 +1,54 @@
 import React from "react";
 import './style.css';
+import star from "./images/empty-star.png";
+import filledStar from "./images/filled-star.png"
 
 function App() {
-    const [count, setCount] = React.useState(0)
 
-    function add() {
-        console.log("add");
-        setCount(prevCount => prevCount + 1);
+    const [contact, setContact] = React.useState({
+        firstName: "John",
+        lastName: "Doe",
+        phoneNumber: "+1 (719) 555-1212",
+        email: "itsmyrealname@example.com",
+        imgUrl: "images/user.png",
+        isFavorite: true
+    })
+
+    let starIcon = contact.isFavorite ? filledStar : star;
+
+    function toggleFavorite() {
+        setContact(prevContact => {
+           return {
+            ...prevContact,
+            isFavorite: !prevContact.isFavorite
+           }
+        })
     }
-    
-    function sub() {
-        console.log("subtract");
-        setCount(prevCount => prevCount - 1);
-    }    
 
     return (
-        <div className="counter">
-            <div className="counter--count">
-                <button className="counter--minus" 
-                    onClick={sub}
-                >-</button>
-            <h1>{count}</h1>
-                <button className="counter--plus" 
-                    onClick={add}
-                >+</button>
+
+        <div>
+            <div className="card">
+                <img className="card-image" src={contact.imgUrl}/>
+                <div className="card-info">
+                    <img 
+                    src={starIcon}
+                    className="card-favorite"
+                    onClick={toggleFavorite}
+                    />
+
+                    <h2 className="card-name">
+                        {contact.firstName} {contact.lastName}
+                    </h2>
+                    <p className="card-contact">{contact.phoneNumber}</p>
+                    <p className="card-email">{contact.email}</p>
+                </div>
+
             </div>
+
         </div>
-    );
+
+    )
 }
 
 export default App;

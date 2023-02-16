@@ -1,68 +1,52 @@
 body {
-    background-color: rgb(42, 42, 42);
-    color: white;
-    font-family: "Karla", sans-serif;
-    text-align: center;
+    margin: 0;
+    font-family: Arial, sans-serif;
 }
 
-.counter {
+.card {
     display: flex;
-    margin-top: 170px;
-}
-
-.counter--count {
-    position: relative;
-    display: flex;
-    margin: auto;
-    justify-content: center;
-    width: 90px;
-    height: 90px;
-    padding: 20px;
+    flex-direction: column;
     align-items: center;
-    background-color: white;
-    color: rgb(42, 42, 42);
-    font-size: 28px;
-    border-radius: 80px;
-    user-select: none;
+    max-width: 270px;
+    margin-top: 50px;
+    margin-left: 30px;
+    border: 1.3px solid gray;
+    border-radius: 10px;
+    padding-top: 20px;
 }
 
-.counter--minus,
-.counter--plus {
-    position: absolute;
-    display: flex;
-    margin: auto;
-    justify-content: center;
-    width: 50px;
-    height: 50px;
-    padding: 20px;
-    align-items: center;
-    background-color: rgb(90, 90, 90);
-    color: rgb(255, 255, 255);
-    font-size: 28px;
-    border-radius: 80px;
-    user-select: none;
-    border: 0;
+.card-image {
+    width: 200px;
+    border-radius: 100px;
 }
 
-.counter--minus {
-    bottom: 0;
-    left: -20px;
+.card-info {
+    width: 100%;
+    padding-left: 30px;
 }
 
-.counter--plus {
-    bottom: 0;
-    right: -20px;
+.card-favorite {
+    width: 40px;
 }
 
-.counter--minus:hover,
-.counter--plus:hover {
-    background-color: gray;
+.card-name {
+    font-size: 32px;
+    margin: 0;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    font-weight: 700;
 }
 
-.counter--minus:active,
-.counter--plus:active {
-    width: 49px;
-    height: 49px;
+.card-contact,
+.card-email {
+    margin: 0;
+    margin-top: 5px;
+    font-weight: 600;
+    color: gray;
+}
+
+.card-email {
+    margin-bottom: 30px;
 }
 
 
