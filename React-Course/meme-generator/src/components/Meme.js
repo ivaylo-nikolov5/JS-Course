@@ -3,13 +3,26 @@ import "../css/meme.css"
 import memesData from "../memesData";
 
 function Meme() {
-    const memes = memesData.data.memes;
-    const [image, setImage] = React.useState("")
+    // const memes = memesData.data.memes;
+    // const [image, setImage] = React.useState("")
 
+    const [meme, setMeme] = React.useState({
+        topText: "",
+        bottomText: "",
+        randomImage: "" 
+    });
+
+
+    const [allMemeImages, setAllMemeImages] = React.useState(memesData);
 
     function handleClick() {
+        const memesArray = allMemeImages.data.memes;
         let randomMeme = Math.trunc(Math.random() * 100 + 1);
-        setImage(memes[randomMeme].url)
+        const url = memesArray[randomMeme].url;
+        setMeme(prevMeme => ({
+            ...prevMeme,
+            randomImage: url
+        }))
     }
 
 
@@ -34,7 +47,7 @@ function Meme() {
             </div>
 
             <div className="memeImageContainer">
-                <img className="memeImage" src={image}/>
+                <img className="memeImage" src={meme.randomImage}/>
             </div>
         </div>
     )
