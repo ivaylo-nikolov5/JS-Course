@@ -9,25 +9,12 @@ function App(props) {
     const [boxesArray, setBoxesArray] = React.useState(boxes);
     
     function toggle(id) {
-        setBoxesArray(prevBoxes => {
-            const newBoxes = [];
-
-            for (let i = 0; i < prevBoxes.length; i++) {
-                const currentSquare = prevBoxes[i];
-                if (currentSquare.id === id) {
-                    const updatedSquare = {
-                        ...currentSquare,
-                        on: !currentSquare.on
-                    }
-                    newBoxes.push(updatedSquare);
-                } else {
-                    newBoxes.push(currentSquare);
-                }
-            }
-
-            return newBoxes;
+        setBoxesArray(oldBoxes => {
+            return oldBoxes.map((box) => {
+                return box.id === id ? {...box, on: !box.on} : box; 
+            })
         })
-    }
+    } 
 
     const boxDivs = boxesArray.map(box => {
         return <Box     
