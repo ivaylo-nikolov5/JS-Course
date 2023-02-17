@@ -1,33 +1,12 @@
 import React from "react";
 import "./style.css"
-import boxes from "./boxes"
-import Box from "./Box";
 
-
-
-function App(props) {
-    const [boxesArray, setBoxesArray] = React.useState(boxes);
-    
-    function toggle(id) {
-        setBoxesArray(oldBoxes => {
-            return oldBoxes.map((box) => {
-                return box.id === id ? {...box, on: !box.on} : box; 
-            })
-        })
-    } 
-
-    const boxDivs = boxesArray.map(box => {
-        return <Box     
-            key={box.id}
-            on={box.on}
-            id={box.id}
-            toggle={toggle}
-        />
-    })
+function App() {
+    const [messages, setMessages] = React.useState(["a", "b"])
 
     return (
-        <div className="mainContainer">
-            {boxDivs}
+        <div>
+            {messages.length > 0 && <h1>You have {messages.length} unread messages!</h1>}
         </div>
     )
 }
