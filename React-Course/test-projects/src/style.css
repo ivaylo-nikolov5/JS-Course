@@ -1,4 +1,73 @@
 body {
-   
+    background-color: rgb(81, 37, 119);
     font-family: Arial, sans-serif;
 }
+
+.formContainer {
+    margin: auto;
+    margin-top: 20px;
+    background-color: white;
+    padding: 20px ;
+    border-radius: 13px;
+    max-width: 350px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    margin-top: 35px;
+    width: 270px;
+}
+
+.formTextBox {
+    width: 250px;
+    height: 40px;
+    margin-bottom: 20px;
+    border: 1.8px solid gray;
+    border-radius: 8px;
+    font-size: 19px;
+    padding-left: 10px;
+}
+
+.newsletter-subsciption {
+    display: flex;
+    align-self: flex-start;
+    align-items: center;
+    margin-top: 10px;
+    font-size: 20px;
+    max-width: 200px;
+}
+
+.newsletter-checkbox {
+    width: 17px;
+    height: 17px;
+    margin-right: 10px;
+}
+
+.newsletter-checkbox:hover {
+    cursor: pointer;
+}
+
+.submit-btn {
+    margin-top: 20px;
+    width: 125px;
+    height: 43px;
+    border: 0;
+    border-radius: 6px;
+    color: white;
+    font-size: 19px;
+    background-color: rgb(81, 37, 119);
+    transition: all ease-in-out 0.3s;
+}
+
+.submit-btn:hover {
+    color: rgb(81, 37, 119);
+    background-color: white;
+    border: 2px solid rgb(81, 37, 119);
+    cursor: pointer;
+}
+
+
+
