@@ -8,7 +8,8 @@ function App() {
         email: "",
         comments: "",
         isFriendly: true,
-        employment: ""
+        employment: "",
+        favColor: ""
 
     });
 
@@ -23,7 +24,7 @@ function App() {
         })
     }
 
-    console.log(formData.employment)
+    console.log(formData.favColor)
     
     return (
         <form>
@@ -106,6 +107,23 @@ function App() {
                 <label htmlFor="full-time">Full-time</label>                
 
             </fieldset>
+
+            <label htmlFor="favCOlor"> What is your favorite color?</label>
+            <br/>
+            <select 
+                id="favColor"
+                value={formData.favColor}
+                onChange={handleChange}
+                name="favColor"
+            >
+                <option value="red">Red</option>
+                <option value="orange">Orange</option>
+                <option value="yellow">Yellow</option>
+                <option value="green">Green</option>
+                <option value="blue">Blue</option>
+                <option value="indigo">Indigo</option>
+                <option value="violet">Violet</option>
+            </select>
         </form>
     )
 }
