@@ -24,10 +24,13 @@ function App() {
         })
     }
 
-    console.log(formData.favColor)
+    function handleSubmit(event) {
+        event.preventDefault()
+        console.log(formData)
+    }
     
     return (
-        <form>
+        <form onSubmit={handleSubmit}>
             <input 
                 type="text"
                 placeholder="First Name"
@@ -124,6 +127,9 @@ function App() {
                 <option value="indigo">Indigo</option>
                 <option value="violet">Violet</option>
             </select>
+            <br/>
+            <br/>
+            <button>Submit</button>
         </form>
     )
 }
