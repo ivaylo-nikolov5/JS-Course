@@ -2,15 +2,57 @@ import React from "react";
 import "./style.css"
 
 function App() {
-    const [messages, setMessages] = React.useState(["a", "b"])
+    const [formData, setFormData] = React.useState({
+        firstName: "",
+        lastName: "",
+        email: "",
+        comments: "",
+    });
 
-    const unreadMessages = messages.length === 0 ? "You're all caught" : 
-    `You have ${messages.length} unread ${messages.length === 1 ? "message" : "messages"}`;
+    console.log(formData);
 
+    function handleChange(event) {
+        setFormData(prevFormData => {
+            return {
+                ...prevFormData,
+                [event.target.name]: event.target.value
+            }
+        })
+    }
+    
     return (
-        <div>
-            <h1>{unreadMessages}</h1>
-        </div>
+        <form>
+            <input 
+                type="text"
+                placeholder="First Name"
+                onChange={handleChange}
+                name="firstName"
+                value={formData.firstName}
+            />
+
+            <input 
+                type="text"
+                placeholder="Last Name"
+                onChange={handleChange}
+                name="lastName"
+                value={formData.lastName}
+            />
+
+            <input 
+                type="text"
+                placeholder="Email"
+                onChange={handleChange}
+                name="email"
+                value={formData.email}
+            />
+
+            <textarea 
+                onChange={handleChange}
+                placeholder="Comments"
+                name="comments"
+                value={formData.comments}
+            />
+        </form>
     )
 }
 
