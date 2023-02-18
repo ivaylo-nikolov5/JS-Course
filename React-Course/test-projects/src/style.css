@@ -2,18 +2,3 @@ body {
    
     font-family: Arial, sans-serif;
 }
-
-.mainContainer {
-    margin: auto;
-    margin-top: 20px;
-    width: 340px;
-}
-
-.box {
-    width: 100px;
-    height: 100px;
-    border: 1px solid black;
-    display: inline-block;
-    margin-right: 4px;
-    border-radius: 5px;
-}

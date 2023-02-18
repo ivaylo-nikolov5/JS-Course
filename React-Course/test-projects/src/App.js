@@ -8,6 +8,7 @@ function App() {
         email: "",
         comments: "",
         isFriendly: true,
+        employment: ""
 
     });
 
@@ -21,6 +22,8 @@ function App() {
             }
         })
     }
+
+    console.log(formData.employment)
     
     return (
         <form>
@@ -63,6 +66,46 @@ function App() {
                 onChange={handleChange}
             />
             <label htmlFor="isFriendly">Are you friendly?</label>
+
+            <fieldset>
+                <legend>Current employment status/</legend>
+                
+                <input
+                    type="radio"
+                    id="unemployed"
+                    name="employment"
+                    onChange={handleChange}
+                    checked={formData.employment === "Unemployed"}
+                    value="Unemployed"
+                />
+
+                <label htmlFor="unemployed">Unemployed</label>
+                <br/>
+
+                <input
+                    type="radio"
+                    id="part-time"
+                    name="employment"
+                    onChange={handleChange}
+                    checked={formData.employment === "Part-time"}
+                    value="Part-time"
+                />
+
+                <label htmlFor="part-time">Part-time</label>
+                <br/>
+
+                <input
+                    type="radio"
+                    id="full-time"
+                    name="employment"
+                    onChange={handleChange}
+                    checked={formData.employment === "Full-time"}
+                    value="Full-time"
+                />
+
+                <label htmlFor="full-time">Full-time</label>                
+
+            </fieldset>
         </form>
     )
 }
