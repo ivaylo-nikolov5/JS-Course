@@ -58,14 +58,14 @@
 }
 
 .meme--image {
-    max-width: 100%;
+    max-width: 80%;
     border-radius: 3px;
     margin-top: 20px;
 }
 
 .meme--text {
     position: absolute;
-    width: 80%;
+    max-width: 100%;
     text-align: center;
     left: 50%;
     transform: translateX(-50%);
