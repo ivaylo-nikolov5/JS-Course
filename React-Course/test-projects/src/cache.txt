@@ -1,0 +1,171 @@
+JS :
+
+const [formData, setFormData] = React.useState({
+        email: "",
+        password: "",
+        confirmPassword: "",
+        newsletterSubscription: false
+    })
+
+    function handleChange(event) {
+        setFormData(prevFormData => {
+            const {name, value, type, checked} = event.target;
+            return {
+                ...prevFormData,
+                [name]: type === "checkbox" ? checked : value 
+            }
+        })
+    }
+
+    function handleSubmit(event) {
+        event.preventDefault();
+
+        if (formData.password === "" 
+            || formData.confirmPassword === "" 
+            || formData.email === "") {
+            console.log("There cannot be empty fields!");
+            return;
+        }         
+        
+
+
+        if (formData.password !== formData.confirmPassword) {
+            console.log("Passwords do not match!");
+            return;
+        } 
+        
+
+        else
+        console.log("Succesfully signed up!");
+
+        if (formData.newsletterSubscription) 
+        console.log("Thanks for signing up for our newsletter!");
+    }
+
+    return (
+        <div className="formContainer">
+            <form className="form" onSubmit={handleSubmit}>
+                <input 
+                    className="formTextBox"
+                    placeholder="Email"
+                    onChange={handleChange}
+                    name="email"
+                    value={formData.email}                
+                />
+
+                <input 
+                    type="password"
+                    className="formTextBox"
+                    placeholder="Password" 
+                    onChange={handleChange}
+                    name="password"
+                    value={formData.password}                  
+                />
+
+                <input 
+                    type="password"
+                    className="formTextBox"
+                    placeholder="Confirm password" 
+                    onChange={handleChange}
+                    name="confirmPassword"
+                    value={formData.confirmPassword}                  
+                />
+
+                <div className="newsletter-subsciption">
+                    <input 
+                        id="newsletterSubscription"
+                        type="checkbox" 
+                        name="newsletterSubscription"
+                        className="newsletter-checkbox"  
+                        onChange={handleChange}
+                        checked={formData.newsletterSubscription}    
+                    />
+                    <label 
+                        htmlFor="newsletterSubscription"
+                        className="newsletter-label">
+                        I want to join the newsletter
+                    </label>
+                </div>
+                <button
+                    className="submit-btn"
+                >Sign up</button>
+            </form>
+        </div>
+    )
+
+
+CSS: 
+
+body {
+    background-color: rgb(81, 37, 119);
+    font-family: Arial, sans-serif;
+}
+
+.formContainer {
+    margin: auto;
+    margin-top: 20px;
+    background-color: white;
+    padding: 20px ;
+    border-radius: 13px;
+    max-width: 350px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    margin-top: 35px;
+    width: 270px;
+}
+
+.formTextBox {
+    width: 250px;
+    height: 40px;
+    margin-bottom: 20px;
+    border: 1.8px solid gray;
+    border-radius: 8px;
+    font-size: 19px;
+    padding-left: 10px;
+}
+
+.newsletter-subsciption {
+    display: flex;
+    align-self: flex-start;
+    align-items: center;
+    margin-top: 10px;
+    font-size: 20px;
+    max-width: 200px;
+}
+
+.newsletter-checkbox {
+    width: 17px;
+    height: 17px;
+    margin-right: 10px;
+}
+
+.newsletter-checkbox:hover {
+    cursor: pointer;
+}
+
+.submit-btn {
+    margin-top: 20px;
+    width: 125px;
+    height: 43px;
+    border: 0;
+    border-radius: 6px;
+    color: white;
+    font-size: 19px;
+    background-color: rgb(81, 37, 119);
+    transition: all ease-in-out 0.3s;
+}
+
+.submit-btn:hover {
+    color: rgb(81, 37, 119);
+    background-color: white;
+    border: 2px solid rgb(81, 37, 119);
+    cursor: pointer;
+}
+
+
+
