@@ -1,0 +1,45 @@
+.headerContainer {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    box-shadow: 3px 2px 5px 1px rgba(112, 111, 111, 0.3);
+}
+
+.header-logo {
+    width: 45px;
+    margin-left: 25px;
+    margin-right: 14px;
+}
+
+.header-title {
+    color: rgb(97, 226, 243);
+}
+
+.toggleMode {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 10px;
+}
+
+.toggle-btn {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    width: 41px;
+    height: 23px;
+    background-color: black;
+    border-radius: 14px;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+.toggle-circle {
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 20px;
+}
+
