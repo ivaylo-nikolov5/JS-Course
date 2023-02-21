@@ -5,6 +5,7 @@
     padding-top: 3px;
     padding-bottom: 3px;
     box-shadow: 3px 2px 5px 1px rgba(112, 111, 111, 0.3);
+    transition: all ease-in-out 1s;
 }
 
 .header-logo {

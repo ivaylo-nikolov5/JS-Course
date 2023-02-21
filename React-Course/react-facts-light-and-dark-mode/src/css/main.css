@@ -2,7 +2,7 @@
     padding-top: 60px;
     padding-left: 40px;
     height: 100vh;
-    
+    transition: all ease-in-out 1s;
 }
 
 .main-title {
